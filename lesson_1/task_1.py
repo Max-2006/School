@@ -1,10 +1,5 @@
-a = input('Input side "a" size:' )
-b = input('Input side "b" size:' )
-c = input('Input side "c" size:' )
+a = int(input('Введите число "a": '))
+b = int(input('Введите число "b": '))
+c = int(input('Введите число "c": '))
 
-if a == b and a == c and b == c:
-    print(True)
-else:
-    print(False)
-
-
+print("Равносторонний треугольник", a == b and b == c and c == a)
