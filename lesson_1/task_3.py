@@ -2,11 +2,5 @@ a = int(input('введите число "a": '))
 b = int(input('введите число "b": '))
 c = int(input('введите число "c": '))
 
-if a == b and a != c or b != c:
-    print(True)
-elif b == c and b != a or a != c:
-    print(True)
-elif c == a and c != b or a != b:
-    print(True)
-else:
-    print(False)
+print("Равнобедренный треугольник", ( a == b and b != c and c != a ) or \
+                   ( b == c and c != a and a != b ) or ( c == a and a != b and b != c ))
